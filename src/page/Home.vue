@@ -45,6 +45,7 @@
     </div>
   </div>
 
+  <!-- 贊助檔案下載-->
   <div class="social-section">
     <MainTitle title="玩家專用" />
     <div class="social">
@@ -52,7 +53,7 @@
         <img src="../assets/q1.png" />
         <h1>檔案下載</h1>
       </router-link>
-      <router-link class="social-item">
+      <router-link to="/announcement" class="social-item">
         <img src="../assets/q1.png" />
         <h1>贊助相關</h1>
       </router-link>
