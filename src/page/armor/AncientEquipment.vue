@@ -15,7 +15,7 @@
       <tbody class="divide-y">
         <tr v-for="(item, index) in data" :key="index">
           <td>
-            <div><img :src="`/public/icons/armor/${item.img}`" /></div>
+            <div><img :src="`/icons/armor/${item.img}`" /></div>
             <span class="text-center block">{{ item.name }}</span>
           </td>
           <td>
