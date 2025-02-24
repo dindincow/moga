@@ -1,5 +1,8 @@
 <template>
-  <div class="main-title"><img src="../assets/main_title1.png" /></div>
+  <div class="main-title">
+    <img src="../assets/main_title1.png" v-if="title === '遊戲資訊'" />
+    <img src="../assets/subject_pc_zh1.png" v-else="title === '玩家專用'" />
+  </div>
 </template>
 <script setup>
 defineProps({

@@ -6,7 +6,7 @@
         <source src="https://vod.plaync.com/LineageW/20241104/web_bg.mp4.mp4" type="video/mp4" />
         您的瀏覽器不支援 HTML5 影片
       </video>
-      <div class="logo"><img src="../assets/logo2.png" /></div>
+      <div class="logo"><img src="../assets/logo.png" /></div>
       <div class="download"><img src="../assets/btn_watch_pc_zh.png" /></div>
     </div>
   </div>
@@ -135,6 +135,7 @@ li {
   align-items: center;
   font-family: "Noto Serif TC", serif;
   color: #ccc;
+  /* background: url("../assets/btn-bg.png") rgba(0, 0, 0, 0.5); */
 }
 .game-info-item img {
   padding: 10px 15px;
@@ -181,6 +182,8 @@ li {
   align-items: center;
   justify-content: space-evenly;
   color: #ccc;
+  background: url("../assets/btn-bg.png");
+  background-size: cover;
 }
 .social-item img {
   width: 242px;

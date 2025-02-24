@@ -5,7 +5,6 @@ import About from "../page/About.vue";
 /** 遊戲公告 **/
 import Announcement from "../page/announcement/index.vue";
 import Disclaimer from "../page/announcement/Disclaimer.vue";
-import SponsorDeclar from "../page/sponsor/SponsorDeclar.vue";
 
 /** 遊戲設定 **/
 import GameSetting from "../page/gameSetting/index.vue";
@@ -46,9 +45,16 @@ import Tshirt from "../page/armor/Tshirt.vue"; // 古老裝備
 /** 道具介紹 **/
 import Object from "../page/object/index.vue";
 import Doll from "../page/object/Doll.vue";
+import ExperienceDoll from "../page/object/ExperienceDoll.vue";
 
+/** 檔案下載 **/
 import Dowload from "../page/dowload/index.vue";
+
+/** 贊助相關 **/
 import Sponsor from "../page/sponsor/index.vue";
+import SponsorDeclar from "../page/sponsor/SponsorDeclar.vue";
+import FirstDeposit from "../page/sponsor/FirstDeposit.vue";
+import Accumulated from "../page/sponsor/Accumulated.vue";
 
 // 公告內容
 import Post1 from "../page/announcement/announcementDetail/Post1.vue";
@@ -65,7 +71,15 @@ const routes = [
   { path: "/disclaimer", component: Disclaimer },
 
   /* 贊助聲明 */
-  { path: "/sponsorDeclar", component: SponsorDeclar },
+  {
+    path: "/sponsor",
+    component: Sponsor,
+    children: [
+      { path: "sponsorDeclar", component: SponsorDeclar }, // 贊助聲明
+      { path: "firstDeposit", component: FirstDeposit }, // 首儲
+      { path: "accumulated", component: Accumulated }, // 累積儲值
+    ],
+  },
 
   /* 遊戲設定 */
   {
@@ -129,10 +143,10 @@ const routes = [
     component: Object,
     children: [
       { path: "doll", component: Doll },
-      { path: "transform", component: Transform },
-      { path: "simpleRing", component: SimpleRing },
-      { path: "snapeRing", component: SnapeRing },
-      { path: "ancientEquipment", component: AncientEquipment },
+      { path: "experienceDoll", component: ExperienceDoll },
+      // { path: "simpleRing", component: SimpleRing },
+      // { path: "snapeRing", component: SnapeRing },
+      // { path: "ancientEquipment", component: AncientEquipment },
     ],
   },
 

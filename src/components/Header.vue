@@ -1,7 +1,7 @@
 <template>
   <div class="header-wraper">
     <div class="header">
-      <div class="logo" @click="gotoPage"><img src="../assets/logo2.png" /></div>
+      <div class="logo" @click="gotoPage"><img src="../assets/logo.png" /></div>
       <div class="menu">
         <ul>
           <li><router-link to="/gameSetting/serverSet">遊戲設置</router-link></li>
@@ -10,7 +10,7 @@
           <li><router-link to="/armor/luntisEarrings">防具介紹</router-link></li>
           <li><router-link to="/object/doll">道具介紹</router-link></li>
           <li><router-link to="/dowload">檔案下載</router-link></li>
-          <li><router-link to="/sponsor">贊助說明</router-link></li>
+          <li><router-link to="/sponsor/sponsorDeclar">贊助說明1</router-link></li>
         </ul>
       </div>
     </div>
