@@ -10,7 +10,7 @@
           <li><router-link to="/armor/luntisEarrings">防具介紹</router-link></li>
           <li><router-link to="/object/doll">道具介紹</router-link></li>
           <li><router-link to="/dowload">檔案下載</router-link></li>
-          <li><router-link to="/sponsor/sponsorDeclar">贊助說明1</router-link></li>
+          <li><router-link to="/sponsor/sponsorDeclar">贊助說明</router-link></li>
         </ul>
       </div>
     </div>
