@@ -14,11 +14,11 @@
     <div class="flex box-wapper">
       <div class="box">
         <h3 class="text-blue-300 font-bold">🎁 盟主創盟禮包(盟主獲得)</h3>
-
         <p>+9黃金權杖</p>
         <p>天幣100萬</p>
         <p>強化 戰鬥卷軸 * 5</p>
         <p>血盟穿雲箭 * 100</p>
+        <p>元寶3000</p>
       </div>
       <div class="box">
         <h3 class="text-blue-300 font-bold">🎁 盟友禮包</h3>
