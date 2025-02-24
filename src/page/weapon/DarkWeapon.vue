@@ -36,7 +36,7 @@
 <script setup>
 const data = [
   {
-    img: "w113.jpg",
+    img: "w133.jpg",
     name: "暗黑十字弓",
     desc: ["攻擊：5 / 5", "雙手", "安定：6", "材料：白金"],
     ability: ["近距離命中+4", "額外攻擊點數+6", "貫穿效果"],
