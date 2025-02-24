@@ -19,6 +19,14 @@ import GameFeature from "../page/gameFeature/index.vue";
 import AttributeEnchantment from "../page/gameFeature/AttributeEnchantment.vue";
 import BlessingAttribute from "../page/gameFeature/BlessingAttribute.vue";
 import WeaponArmorBonus from "../page/gameFeature/WeaponArmorBonus.vue";
+import BossSet from "../page/gameFeature/BossSet.vue"; // boss 套裝
+import BossMake from "../page/gameFeature/BossMake.vue"; // boss 套裝製作
+import MapTask from "../page/gameFeature/MapTask.vue"; // 地圖任務
+import RoyalClanPack from "../page/gameFeature/RoyalClanPack.vue"; // 王族創盟禮包
+import Transform from "../page/gameFeature/Transform.vue"; // 變身介紹
+import OnlineCoins from "../page/gameFeature/OnlineCoins.vue"; // 線上幣介紹
+import DayTask from "../page/gameFeature/DayTask.vue"; // 每日任務
+import AutoPlay from "../page/gameFeature/AutoPlay.vue"; // 限時介紹
 
 /** 武器介紹 **/
 import Weapon from "../page/weapon/index.vue";
@@ -38,7 +46,6 @@ import Tshirt from "../page/armor/Tshirt.vue"; // 古老裝備
 /** 道具介紹 **/
 import Object from "../page/object/index.vue";
 import Doll from "../page/object/Doll.vue";
-import Transform from "../page/object/Transform.vue";
 
 import Dowload from "../page/dowload/index.vue";
 import Sponsor from "../page/sponsor/index.vue";
@@ -80,7 +87,14 @@ const routes = [
       { path: "attributeEnchantment", component: AttributeEnchantment },
       { path: "blessingAttribute", component: BlessingAttribute },
       { path: "weaponArmorBonus", component: WeaponArmorBonus },
-      // { path: "maxHpMp", component: MaxHpMp },
+      { path: "bossSet", component: BossSet },
+      { path: "bossMake", component: BossMake },
+      { path: "mapTask", component: MapTask },
+      { path: "royalClanPack", component: RoyalClanPack },
+      { path: "transform", component: Transform },
+      { path: "onlineCoins", component: OnlineCoins },
+      { path: "dayTask", component: DayTask },
+      { path: "autoPlay", component: AutoPlay },
     ],
   },
 
