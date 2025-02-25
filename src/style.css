@@ -81,3 +81,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+/* 活動*/
+.event {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgb(181, 83, 115);
+}
+
+/* 公告 */
+
+.announcement {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgb(93, 154, 93);
+}

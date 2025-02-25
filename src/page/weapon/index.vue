@@ -4,7 +4,7 @@
       <router-link to="/weapon/normalWeapon" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">一般武器</router-link>
       <router-link to="/weapon/ancientWeapon" :class="[tabIndex === 1 ? 'active' : '']" @click="changeMenu(1)">古老武器</router-link>
       <router-link to="/weapon/darkWeapon" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(2)">暗黑武器</router-link>
-      <!-- <router-link to="/gameSetting/pets" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">123</router-link> -->
+      <router-link to="/weapon/dragonShatter" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">碎龍武器</router-link>
     </div>
 
     <div class="right">
@@ -21,7 +21,7 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-const tabTitle = ["一般武器", "古老武器", "暗黑武器"];
+const tabTitle = ["一般武器", "古老武器", "暗黑武器", "碎龍武器"];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
 
@@ -30,6 +30,7 @@ const pathMap = {
   "/weapon/normalWeapon": 0,
   "/weapon/ancientWeapon": 1,
   "/weapon/darkWeapon": 2,
+  "/weapon/dragonShatter": 3,
 };
 
 watch(

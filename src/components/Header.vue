@@ -4,6 +4,7 @@
       <div class="logo" @click="gotoPage"><img src="../assets/logo.png" /></div>
       <div class="menu">
         <ul>
+          <li><router-link to="/announcement">公告發佈</router-link></li>
           <li><router-link to="/gameSetting/serverSet">遊戲設置</router-link></li>
           <li><router-link to="/gameFeature/weaponArmorBonus">遊戲特色</router-link></li>
           <li><router-link to="/weapon/normalWeapon">武器介紹</router-link></li>
@@ -49,7 +50,7 @@ const gotoPage = () => {
   list-style: none;
   color: #ad9774;
   /* color: aliceblue; */
-  padding: 0 20px;
+  padding: 0 15px;
   font-size: 18px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }

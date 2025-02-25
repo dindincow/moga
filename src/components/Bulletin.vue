@@ -2,10 +2,12 @@
   <div class="bulletin">
     <div class="left">
       <div class="bulletin-title">最新公告</div>
-      <div class="content"><span class="tag active">公告</span>[神說]2025/01/28(二)10:00例行性維護(已開放)</div>
-      <div class="content"><span class="tag important">公告</span>[神說]2025/01/28(二)10:00例行性維護(已開放)</div>
-      <div class="content"><span class="tag active">公告</span>[神說]2025/01/28(二)10:00例行性維護(已開放)</div>
-      <div class="content"><span class="tag news">公告</span>[神說]2025/01/28(二)10:00例行性維護(已開放)</div>
+      <router-link to="/announcement/post2">
+        <div class="content"><span class="announcement">開服公告</span> 2025/03/10 晚上8點正式開服</div>
+      </router-link>
+      <router-link to="/announcement/post1">
+        <div class="content"><span class="event">永久活動</span> 加 line 拿好禮</div>
+      </router-link>
     </div>
     <div class="right"><iframe width="100%" height="298" :src="videoUrl" frameborder="0" allowfullscreen></iframe></div>
   </div>

@@ -5,6 +5,9 @@ import About from "../page/About.vue";
 /** 遊戲公告 **/
 import Announcement from "../page/announcement/index.vue";
 import Disclaimer from "../page/announcement/Disclaimer.vue";
+// 公告內容
+import Post1 from "../page/announcement/announcementDetail/Post1.vue";
+import Post2 from "../page/announcement/announcementDetail/Post2.vue";
 
 /** 遊戲設定 **/
 import GameSetting from "../page/gameSetting/index.vue";
@@ -32,6 +35,7 @@ import Weapon from "../page/weapon/index.vue";
 import NormalWeapon from "../page/weapon/NormalWeapon.vue"; // 一般武器
 import AncientWeapon from "../page/weapon/AncientWeapon.vue"; // 古代武器
 import DarkWeapon from "../page/weapon/DarkWeapon.vue"; // 暗黑武器
+import DragonShatter from "../page/weapon/DragonShatter.vue"; // 碎龍武器
 
 /** 防具介紹 **/
 import Armor from "../page/armor/index.vue";
@@ -45,7 +49,10 @@ import Tshirt from "../page/armor/Tshirt.vue"; // 古老裝備
 /** 道具介紹 **/
 import Object from "../page/object/index.vue";
 import Doll from "../page/object/Doll.vue";
-import ExperienceDoll from "../page/object/ExperienceDoll.vue";
+import ExperienceDoll from "../page/object/ExperienceDoll.vue"; // 經驗娃娃
+import PriestDoll from "../page/object/PriestDoll.vue"; // 祭司娃娃
+import TwilightEmblem from "../page/object/TwilightEmblem.vue"; // 暮光勳章
+import BossStone from "../page/object/BossStone.vue"; // boss 符石
 
 /** 檔案下載 **/
 import Dowload from "../page/dowload/index.vue";
@@ -56,16 +63,14 @@ import SponsorDeclar from "../page/sponsor/SponsorDeclar.vue";
 import FirstDeposit from "../page/sponsor/FirstDeposit.vue";
 import Accumulated from "../page/sponsor/Accumulated.vue";
 
-// 公告內容
-import Post1 from "../page/announcement/announcementDetail/Post1.vue";
-
 const routes = [
   { path: "/", component: Home },
   { path: "/about", component: About },
 
   /* 遊戲公告 */
   { path: "/announcement", component: Announcement },
-  { path: "/announcement/post1", component: Post1 },
+  { path: "/announcement/post1", component: Post1 }, // 加賴
+  { path: "/announcement/post2", component: Post2 }, // 開服公告
 
   /* 免責聲明 */
   { path: "/disclaimer", component: Disclaimer },
@@ -120,7 +125,7 @@ const routes = [
       { path: "normalWeapon", component: NormalWeapon },
       { path: "ancientWeapon", component: AncientWeapon },
       { path: "darkWeapon", component: DarkWeapon },
-      // { path: "maxHpMp", component: MaxHpMp },
+      { path: "dragonShatter", component: DragonShatter },
     ],
   },
 
@@ -144,9 +149,9 @@ const routes = [
     children: [
       { path: "doll", component: Doll },
       { path: "experienceDoll", component: ExperienceDoll },
-      // { path: "simpleRing", component: SimpleRing },
-      // { path: "snapeRing", component: SnapeRing },
-      // { path: "ancientEquipment", component: AncientEquipment },
+      { path: "priestDoll", component: PriestDoll },
+      { path: "twilightEmblem", component: TwilightEmblem },
+      { path: "bossStone", component: BossStone },
     ],
   },
 

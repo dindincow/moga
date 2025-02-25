@@ -3,8 +3,9 @@
     <div class="left">
       <router-link to="/object/doll" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">魔法娃娃</router-link>
       <router-link to="/object/experienceDoll" :class="[tabIndex === 1 ? 'active' : '']" @click="changeMenu(1)">經驗娃娃</router-link>
-      <router-link to="/object/darkWeapon" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(2)">祭司娃娃</router-link>
-      <!-- <router-link to="/gameSetting/pets" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">123</router-link> -->
+      <router-link to="/object/priestDoll" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(2)">祭司娃娃</router-link>
+      <router-link to="/object/twilightEmblem" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">暮光勳章</router-link>
+      <router-link to="/object/bossStone" :class="[tabIndex === 4 ? 'active' : '']" @click="changeMenu(4)">boss符石</router-link>
     </div>
 
     <div class="right">
@@ -21,7 +22,7 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-const tabTitle = ["魔法娃娃", "經驗娃娃", "祭司娃娃"];
+const tabTitle = ["魔法娃娃", "經驗娃娃", "祭司娃娃", "暮光勳章", "boss符石"];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
 
@@ -29,7 +30,9 @@ const title = computed(() => tabTitle[tabIndex.value]);
 const pathMap = {
   "/object/doll": 0,
   "/object/experienceDoll": 1,
-  // "/object/doll": 2,
+  "/object/priestDoll": 2,
+  "/object/twilightEmblem": 3,
+  "/object/bossStone": 4,
 };
 
 watch(
