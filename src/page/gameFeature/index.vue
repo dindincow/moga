@@ -12,7 +12,8 @@
       <router-link to="/gameFeature/transform" :class="[tabIndex === 7 ? 'active' : '']" @click="changeMenu(7)">變身介紹</router-link>
       <router-link to="/gameFeature/onlineCoins" :class="[tabIndex === 8 ? 'active' : '']" @click="changeMenu(8)">在線幣說明</router-link>
       <router-link to="/gameFeature/dayTask" :class="[tabIndex === 9 ? 'active' : '']" @click="changeMenu(9)">每日任務系統</router-link>
-      <router-link to="/gameFeature/autoPlay" :class="[tabIndex === 10 ? 'active' : '']" @click="changeMenu(9)">定時內掛</router-link>
+      <router-link to="/gameFeature/autoPlay" :class="[tabIndex === 10 ? 'active' : '']" @click="changeMenu(10)">定時內掛</router-link>
+      <router-link to="/gameFeature/killSystem" :class="[tabIndex === 10 ? 'active' : '']" @click="changeMenu(11)">眾生平等殺戮系統</router-link>
     </div>
     <div class="right">
       <h1>{{ title }}</h1>
@@ -41,6 +42,7 @@ const tabTitle = [
   "在線幣說明",
   "每日任務系統",
   "定時內掛",
+  "眾生平等殺戮系統",
 ];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
@@ -58,6 +60,7 @@ const pathMap = {
   "/gameFeature/onlineCoins": 8,
   "/gameFeature/dayTask": 9,
   "/gameFeature/autoPlay": 10,
+  "/gameFeature/killSystem": 11,
 };
 
 watch(

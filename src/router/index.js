@@ -29,6 +29,7 @@ import Transform from "../page/gameFeature/Transform.vue"; // 變身介紹
 import OnlineCoins from "../page/gameFeature/OnlineCoins.vue"; // 線上幣介紹
 import DayTask from "../page/gameFeature/DayTask.vue"; // 每日任務
 import AutoPlay from "../page/gameFeature/AutoPlay.vue"; // 限時介紹
+import KillSystem from "../page/gameFeature/KillSystem.vue"; //眾生平等殺人系統
 
 /** 武器介紹 **/
 import Weapon from "../page/weapon/index.vue";
@@ -53,6 +54,10 @@ import ExperienceDoll from "../page/object/ExperienceDoll.vue"; // 經驗娃娃
 import PriestDoll from "../page/object/PriestDoll.vue"; // 祭司娃娃
 import TwilightEmblem from "../page/object/TwilightEmblem.vue"; // 暮光勳章
 import BossStone from "../page/object/BossStone.vue"; // boss 符石
+import MakePanacea from "../page/object/MakePanacea.vue"; // 存白萬能藥
+import BossRadar from "../page/object/BossRadar.vue"; // BOSS 雷達
+import OnlineEmblem from "../page/object/OnlineEmblem.vue"; // 在線勳章
+import TShirtBox from "../page/object/TShirtBox.vue"; // 獵影之痕寶箱
 
 /** 檔案下載 **/
 import Dowload from "../page/dowload/index.vue";
@@ -114,6 +119,7 @@ const routes = [
       { path: "onlineCoins", component: OnlineCoins },
       { path: "dayTask", component: DayTask },
       { path: "autoPlay", component: AutoPlay },
+      { path: "killSystem", component: KillSystem },
     ],
   },
 
@@ -152,6 +158,10 @@ const routes = [
       { path: "priestDoll", component: PriestDoll },
       { path: "twilightEmblem", component: TwilightEmblem },
       { path: "bossStone", component: BossStone },
+      { path: "makePanacea", component: MakePanacea },
+      { path: "bossRadar", component: BossRadar },
+      { path: "onlineEmblem", component: OnlineEmblem },
+      { path: "tShirtBox", component: TShirtBox },
     ],
   },
 

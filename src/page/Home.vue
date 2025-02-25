@@ -26,15 +26,15 @@
         <div><img src="../assets/a04.png" /></div>
         <h1>遊戲設置</h1>
       </router-link>
-      <router-link to="/announcement" class="game-info-item">
+      <router-link to="/gameFeature/weaponArmorBonus" class="game-info-item">
         <div><img src="../assets/a08.png" /></div>
         <h1>遊戲特色</h1>
       </router-link>
-      <router-link to="/announcement" class="game-info-item">
+      <router-link to="/weapon/normalWeapon" class="game-info-item">
         <div><img src="../assets/a01.png" /></div>
         <h1>武器介紹</h1>
       </router-link>
-      <router-link to="/announcement" class="game-info-item">
+      <router-link to="/armor/luntisEarrings" class="game-info-item">
         <div><img src="../assets/a02.png" /></div>
         <h1>防具介紹</h1>
       </router-link>
@@ -49,11 +49,11 @@
   <div class="social-section">
     <MainTitle title="玩家專用" />
     <div class="social">
-      <router-link to="/announcement" class="social-item">
+      <router-link to="/dowload" class="social-item">
         <img src="../assets/q1.png" />
         <h1>檔案下載</h1>
       </router-link>
-      <router-link to="/announcement" class="social-item">
+      <router-link to="/sponsor/sponsorDeclar" class="social-item">
         <img src="../assets/q1.png" />
         <h1>贊助相關</h1>
       </router-link>

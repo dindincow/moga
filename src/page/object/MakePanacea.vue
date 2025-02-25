@@ -1,7 +1,7 @@
 <template>
   <div class="content">
-    <h2>【祭司娃娃：鐮刀死神】👿⚔️ 無法與經驗娃娃共存</h2>
-    <img src="../../assets/r1.png" />
+    <h2>人人有機會，不需要花錢，收集純白萬能藥就可有機率製作出萬能藥唷！ 💊</h2>
+    <img src="../../assets/p01.png" />
   </div>
 </template>
 <script setup></script>

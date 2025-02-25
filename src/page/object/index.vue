@@ -6,6 +6,10 @@
       <router-link to="/object/priestDoll" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(2)">祭司娃娃</router-link>
       <router-link to="/object/twilightEmblem" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">暮光勳章</router-link>
       <router-link to="/object/bossStone" :class="[tabIndex === 4 ? 'active' : '']" @click="changeMenu(4)">boss符石</router-link>
+      <router-link to="/object/makePanacea" :class="[tabIndex === 5 ? 'active' : '']" @click="changeMenu(5)">萬能藥製作</router-link>
+      <router-link to="/object/bossRadar" :class="[tabIndex === 6 ? 'active' : '']" @click="changeMenu(6)">Boss雷達</router-link>
+      <router-link to="/object/onlineEmblem" :class="[tabIndex === 7 ? 'active' : '']" @click="changeMenu(7)">在線勳章</router-link>
+      <router-link to="/object/tShirtBox" :class="[tabIndex === 8 ? 'active' : '']" @click="changeMenu(8)">獵影之痕寶箱</router-link>
     </div>
 
     <div class="right">
@@ -22,7 +26,7 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-const tabTitle = ["魔法娃娃", "經驗娃娃", "祭司娃娃", "暮光勳章", "boss符石"];
+const tabTitle = ["魔法娃娃", "經驗娃娃", "祭司娃娃", "暮光勳章", "boss符石", "萬能藥製作", "Boss雷達", "在線勳章", "獵影之痕寶箱"];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
 
@@ -33,6 +37,10 @@ const pathMap = {
   "/object/priestDoll": 2,
   "/object/twilightEmblem": 3,
   "/object/bossStone": 4,
+  "/object/makePanacea": 5,
+  "/object/bossRadar": 6,
+  "/object/onlineEmblem": 7,
+  "/object/tShirtBox": 8,
 };
 
 watch(

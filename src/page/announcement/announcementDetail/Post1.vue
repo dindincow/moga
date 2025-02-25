@@ -12,7 +12,7 @@
 
       <div class="box">
         <h2 class="text-orange-300 text-xl">🎁 禮包內容:</h2>
-        <p>金幣10萬</p>
+        <p>金幣20萬</p>
         <p>經驗藥水150%*10</p>
         <p>LINE勳章*1</p>
         <p>經驗娃娃：艾依爾</p>
