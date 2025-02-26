@@ -13,7 +13,9 @@
       <router-link to="/gameFeature/onlineCoins" :class="[tabIndex === 8 ? 'active' : '']" @click="changeMenu(8)">在線幣說明</router-link>
       <router-link to="/gameFeature/dayTask" :class="[tabIndex === 9 ? 'active' : '']" @click="changeMenu(9)">每日任務系統</router-link>
       <router-link to="/gameFeature/autoPlay" :class="[tabIndex === 10 ? 'active' : '']" @click="changeMenu(10)">定時內掛</router-link>
-      <router-link to="/gameFeature/killSystem" :class="[tabIndex === 10 ? 'active' : '']" @click="changeMenu(11)">眾生平等殺戮系統</router-link>
+      <router-link to="/gameFeature/killSystem" :class="[tabIndex === 11 ? 'active' : '']" @click="changeMenu(11)">眾生平等殺戮系統</router-link>
+      <router-link to="/gameFeature/SellNpc" :class="[tabIndex === 12 ? 'active' : '']" @click="changeMenu(12)">寄售npc</router-link>
+      <router-link to="/gameFeature/SpecialMap" :class="[tabIndex === 13 ? 'active' : '']" @click="changeMenu(13)">特殊地圖</router-link>
     </div>
     <div class="right">
       <h1>{{ title }}</h1>
@@ -43,6 +45,8 @@ const tabTitle = [
   "每日任務系統",
   "定時內掛",
   "眾生平等殺戮系統",
+  "寄售npc",
+  "特殊地圖",
 ];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
@@ -61,6 +65,8 @@ const pathMap = {
   "/gameFeature/dayTask": 9,
   "/gameFeature/autoPlay": 10,
   "/gameFeature/killSystem": 11,
+  "/gameFeature/SellNpc": 12,
+  "/gameFeature/SpecialMap": 13,
 };
 
 watch(

@@ -96,3 +96,9 @@ button:focus-visible {
   border-radius: 5px;
   background: rgb(93, 154, 93);
 }
+/* 限時活動*/
+.limit-event {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgb(72, 135, 224);
+}

@@ -28,6 +28,10 @@
         <div class="col"><span class="announcement">開服公告</span> - 2025/03/10 晚上8點正式開服</div>
         <div class="col">2025/03/02</div>
       </div>
+      <div class="row" @click="gotoDetail('/announcement/post3')">
+        <div class="col"><span class="limit-event">限時活動</span> - 慶開服，金幣加倍!!</div>
+        <div class="col">2025/03/02</div>
+      </div>
       <div class="row" @click="gotoDetail('/announcement/post1')">
         <div class="col"><span class="event">永久活動</span> - 加 line 拿好禮</div>
         <div class="col">2025/03/02</div>

@@ -8,6 +8,7 @@ import Disclaimer from "../page/announcement/Disclaimer.vue";
 // 公告內容
 import Post1 from "../page/announcement/announcementDetail/Post1.vue";
 import Post2 from "../page/announcement/announcementDetail/Post2.vue";
+import Post3 from "../page/announcement/announcementDetail/Post3.vue";
 
 /** 遊戲設定 **/
 import GameSetting from "../page/gameSetting/index.vue";
@@ -30,6 +31,8 @@ import OnlineCoins from "../page/gameFeature/OnlineCoins.vue"; // 線上幣介�
 import DayTask from "../page/gameFeature/DayTask.vue"; // 每日任務
 import AutoPlay from "../page/gameFeature/AutoPlay.vue"; // 限時介紹
 import KillSystem from "../page/gameFeature/KillSystem.vue"; //眾生平等殺人系統
+import SellNpc from "../page/gameFeature/SellNpc.vue"; // 寄賣npc
+import SpecialMap from "../page/gameFeature/SpecialMap.vue"; // 特殊地圖
 
 /** 武器介紹 **/
 import Weapon from "../page/weapon/index.vue";
@@ -37,6 +40,7 @@ import NormalWeapon from "../page/weapon/NormalWeapon.vue"; // 一般武器
 import AncientWeapon from "../page/weapon/AncientWeapon.vue"; // 古代武器
 import DarkWeapon from "../page/weapon/DarkWeapon.vue"; // 暗黑武器
 import DragonShatter from "../page/weapon/DragonShatter.vue"; // 碎龍武器
+import Pandora from "../page/weapon/Pandora.vue"; // 潘朵拉武器
 
 /** 防具介紹 **/
 import Armor from "../page/armor/index.vue";
@@ -76,6 +80,7 @@ const routes = [
   { path: "/announcement", component: Announcement },
   { path: "/announcement/post1", component: Post1 }, // 加賴
   { path: "/announcement/post2", component: Post2 }, // 開服公告
+  { path: "/announcement/post3", component: Post3 }, // 開服公告
 
   /* 免責聲明 */
   { path: "/disclaimer", component: Disclaimer },
@@ -120,6 +125,8 @@ const routes = [
       { path: "dayTask", component: DayTask },
       { path: "autoPlay", component: AutoPlay },
       { path: "killSystem", component: KillSystem },
+      { path: "sellNpc", component: SellNpc },
+      { path: "specialMap", component: SpecialMap },
     ],
   },
 
@@ -132,6 +139,7 @@ const routes = [
       { path: "ancientWeapon", component: AncientWeapon },
       { path: "darkWeapon", component: DarkWeapon },
       { path: "dragonShatter", component: DragonShatter },
+      { path: "pandora", component: Pandora },
     ],
   },
 

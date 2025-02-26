@@ -2,9 +2,10 @@
   <div class="weapon-page">
     <div class="left">
       <router-link to="/weapon/normalWeapon" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">一般武器</router-link>
-      <router-link to="/weapon/ancientWeapon" :class="[tabIndex === 1 ? 'active' : '']" @click="changeMenu(1)">古老武器</router-link>
-      <router-link to="/weapon/darkWeapon" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(2)">暗黑武器</router-link>
-      <router-link to="/weapon/dragonShatter" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">碎龍武器</router-link>
+      <router-link to="/weapon/pandora" :class="[tabIndex === 1 ? 'active' : '']" @click="changeMenu(1)">潘朵拉武器</router-link>
+      <router-link to="/weapon/ancientWeapon" :class="[tabIndex === 2 ? 'active' : '']" @click="changeMenu(1)">古老武器</router-link>
+      <router-link to="/weapon/darkWeapon" :class="[tabIndex === 3 ? 'active' : '']" @click="changeMenu(3)">暗黑武器</router-link>
+      <router-link to="/weapon/dragonShatter" :class="[tabIndex === 4 ? 'active' : '']" @click="changeMenu(4)">碎龍武器</router-link>
     </div>
 
     <div class="right">
@@ -21,16 +22,17 @@ import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const router = useRouter();
 
-const tabTitle = ["一般武器", "古老武器", "暗黑武器", "碎龍武器"];
+const tabTitle = ["一般武器", "潘朵拉武器", "古老武器", "暗黑武器", "碎龍武器"];
 const tabIndex = ref(0);
 const title = computed(() => tabTitle[tabIndex.value]);
 
 // 頁面對應的 tabIndex 設定
 const pathMap = {
   "/weapon/normalWeapon": 0,
-  "/weapon/ancientWeapon": 1,
-  "/weapon/darkWeapon": 2,
-  "/weapon/dragonShatter": 3,
+  "/weapon/pandora": 1,
+  "/weapon/ancientWeapon": 2,
+  "/weapon/darkWeapon": 3,
+  "/weapon/dragonShatter": 4,
 };
 
 watch(
