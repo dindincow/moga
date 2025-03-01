@@ -1,10 +1,10 @@
 <template>
-  <div class="bread-crumbs">遊戲特色 > {{ title }}</div>
+  <div class="bread-crumbs">{{ router }} > {{ title }}</div>
 </template>
 <script setup>
 import { defineProps } from "vue";
 
-defineProps(["title"]);
+defineProps(["title", "router"]);
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <BreadCrumbs :title="title" />
+  <BreadCrumbs :title="title" router="遊戲設置" />
   <div class="gamesetting-page">
     <div class="left">
       <router-link to="/gameSetting/serverSet" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">伺服器設置</router-link>

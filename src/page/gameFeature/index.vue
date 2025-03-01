@@ -1,5 +1,5 @@
 <template>
-  <BreadCrumbs :title="title" />
+  <BreadCrumbs :title="title" router="遊戲特色" />
   <div class="gameFeature-page">
     <div class="left">
       <router-link to="/gameFeature/weaponArmorBonus" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">防武強化過安定值</router-link>

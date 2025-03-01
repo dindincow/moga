@@ -1,10 +1,8 @@
 <template>
   <div class="app">
-    <!-- <div class="box">
-      <img scr="./assets/pp1.png" />
-    </div> -->
+    <div class="box1"><img src="./assets/sponser1.png" /></div>
+    <div class="box2"><img src="./assets/cscontact.png" /></div>
     <Header></Header>
-
     <router-view></router-view>
   </div>
 </template>
@@ -13,20 +11,17 @@ import Header from "./components/Header.vue";
 </script>
 
 <style lang="css" scoped>
-.box {
-  width: 278px;
-  position: absolute;
+.box1 {
+  position: fixed;
+  top: 45%;
+  left: 0.5%;
   z-index: 9;
-  height: 278px;
-  top: 40%;
-  background: url("./assets/pp1.png");
-  opacity: 0.8;
-  left: -20px;
 }
-/* img {
-  background: #ccc;
-  width: 250px;
-  height: 300px;
-  border: 1px solid #ccc;
-} */
+
+.box2 {
+  position: fixed;
+  top: 45%;
+  right: 0.5%;
+  z-index: 9;
+}
 </style>

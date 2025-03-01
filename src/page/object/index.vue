@@ -1,4 +1,5 @@
 <template>
+  <BreadCrumbs :title="title" router="道具介紹" />
   <div class="object-page">
     <div class="left">
       <router-link to="/object/doll" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">魔法娃娃</router-link>
@@ -22,6 +23,7 @@
 <script setup>
 import { computed, onMounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import BreadCrumbs from "../../components/BreadCrumbs.vue";
 
 const route = useRoute();
 const router = useRouter();

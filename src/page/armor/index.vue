@@ -1,4 +1,5 @@
 <template>
+  <BreadCrumbs :title="title" router="防具介紹" />
   <div class="weapon-page">
     <div class="left">
       <router-link to="/armor/luntisEarrings" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">倫提斯耳環</router-link>
@@ -18,6 +19,7 @@
 <script setup>
 import { computed, onMounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import BreadCrumbs from "../../components/BreadCrumbs.vue";
 
 const route = useRoute();
 const router = useRouter();

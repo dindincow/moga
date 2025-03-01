@@ -7,7 +7,7 @@
         您的瀏覽器不支援 HTML5 影片
       </video>
       <div class="logo"><img src="../assets/logo.png" /></div>
-      <div class="download"><img src="../assets/btn_watch_pc_zh.png" /></div>
+      <div class="download" @click="goto"><img src="../assets/btn_watch_pc_zh.png" /></div>
     </div>
   </div>
   <!-- 公告 -->
@@ -50,7 +50,7 @@
     <MainTitle title="玩家專用" />
     <div class="social">
       <router-link to="/dowload" class="social-item">
-        <img src="../assets/q1.png" />
+        <img src="../assets/q2.png" />
         <h1>檔案下載</h1>
       </router-link>
       <router-link to="/sponsor/sponsorDeclar" class="social-item">
@@ -65,6 +65,13 @@
 import Bulletin from "../components/Bulletin.vue";
 import MainTitle from "../components/MainTitle.vue";
 import Footer from "../components/Footer.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const goto = () => {
+  router.push("/dowload");
+};
 </script>
 
 <style scoped>
@@ -182,7 +189,7 @@ li {
   align-items: center;
   justify-content: space-evenly;
   color: #ccc;
-  background: url("../assets/btn-bg.png");
+  /* background: url("../assets/btn-bg.png"); */
   background-size: cover;
 }
 .social-item img {
@@ -191,5 +198,8 @@ li {
 
 .social-item:hover h1 {
   color: orange;
+}
+.download {
+  cursor: pointer;
 }
 </style>

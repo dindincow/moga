@@ -1,4 +1,5 @@
 <template>
+  <BreadCrumbs :title="title" router="贊助介紹" />
   <div class="sponsor-page">
     <div class="left">
       <router-link to="/sponsor/sponsorDeclar" :class="[tabIndex === 0 ? 'active' : '']" @click="changeMenu(0)">贊助說明</router-link>
@@ -17,6 +18,7 @@
 <script setup>
 import { computed, onMounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import BreadCrumbs from "../../components/BreadCrumbs.vue";
 
 const route = useRoute();
 const router = useRouter();

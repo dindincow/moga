@@ -4,23 +4,38 @@
       <div class="logo" @click="gotoPage"><img src="../assets/logo.png" /></div>
       <div class="menu">
         <ul>
-          <li><router-link to="/announcement">公告發佈</router-link></li>
-          <li><router-link to="/gameSetting/serverSet">遊戲設置</router-link></li>
-          <li><router-link to="/gameFeature/weaponArmorBonus">遊戲特色</router-link></li>
-          <li><router-link to="/weapon/normalWeapon">武器介紹</router-link></li>
-          <li><router-link to="/armor/luntisEarrings">防具介紹</router-link></li>
-          <li><router-link to="/object/doll">道具介紹</router-link></li>
-          <li><router-link to="/dowload">檔案下載</router-link></li>
-          <li><router-link to="/sponsor/sponsorDeclar">贊助說明</router-link></li>
+          <li><router-link to="/announcement" :class="{ active: isActive('/announcement') }">公告發佈</router-link></li>
+          <li><router-link to="/gameSetting/serverSet" :class="{ active: isActive('/gameSetting') }">遊戲設置</router-link></li>
+          <li><router-link to="/gameFeature/weaponArmorBonus" :class="{ active: isActive('/gameFeature') }">遊戲特色</router-link></li>
+          <li><router-link to="/weapon/normalWeapon" :class="{ active: isActive('/weapon') }">武器介紹</router-link></li>
+          <li><router-link to="/armor/luntisEarrings" :class="{ active: isActive('/armor') }">防具介紹</router-link></li>
+          <li><router-link to="/object/doll" :class="{ active: isActive('/object') }">道具介紹</router-link></li>
+          <li><router-link to="/dowload" :class="{ active: isActive('/dowload') }">檔案下載</router-link></li>
+          <li><router-link to="/sponsor/sponsorDeclar" :class="{ active: isActive('/sponsor') }">贊助說明</router-link></li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
 <script setup>
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
+import { computed } from "vue";
 
 const router = useRouter();
+const route = useRoute();
+
+console.log("route.path", route.path);
+console.log("path======>", route.path.startsWith(route.path));
+
+// 只檢查第一層路徑，確保不會誤判
+const isActive = (path) => {
+  return computed(() => {
+    const firstSegment = route.path.split("/")[1]; // 取得第一層路徑
+    return firstSegment === path.replace("/", ""); // 確保路徑名稱匹配
+  }).value;
+};
+
 const gotoPage = () => {
   router.push("/");
 };
@@ -56,6 +71,10 @@ const gotoPage = () => {
 }
 .menu ul li a:hover {
   color: rgb(229, 210, 135);
+}
+
+.menu ul li .active {
+  color: rgb(255, 231, 135);
 }
 
 .logo {
